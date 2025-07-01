@@ -391,8 +391,10 @@ export interface ApiUserResumeUserResume extends Struct.CollectionTypeSchema {
     education: Schema.Attribute.Component<'education.education', true>;
     experience: Schema.Attribute.Component<'experience.experience', true>;
     firstName: Schema.Attribute.String;
+    github: Schema.Attribute.String;
     jobTitle: Schema.Attribute.String;
     lastName: Schema.Attribute.String;
+    linkedin: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -412,6 +414,7 @@ export interface ApiUserResumeUserResume extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     userMail: Schema.Attribute.Email;
     userName: Schema.Attribute.String;
+    website: Schema.Attribute.String;
   };
 }
 

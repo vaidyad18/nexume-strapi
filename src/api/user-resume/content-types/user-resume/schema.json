@@ -11,6 +11,12 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "userName": {
+      "type": "string"
+    },
     "firstName": {
       "type": "string"
     },
@@ -55,13 +61,16 @@
       "component": "education.education",
       "repeatable": true
     },
-    "title": {
-      "type": "string"
-    },
     "resumeId": {
       "type": "string"
     },
-    "userName": {
+    "linkedin": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string"
+    },
+    "website": {
       "type": "string"
     }
   }
