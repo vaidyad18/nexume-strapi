@@ -9,7 +9,7 @@
       "type": "string"
     },
     "rating": {
-      "type": "string"
+      "type": "integer"
     }
   },
   "config": {}
