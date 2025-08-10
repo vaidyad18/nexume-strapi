@@ -50,6 +50,7 @@ export interface SkillSkill extends Struct.ComponentSchema {
   };
   attributes: {
     name: Schema.Attribute.String;
+    rating: Schema.Attribute.Integer;
   };
 }
 
