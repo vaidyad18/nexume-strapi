@@ -6,7 +6,7 @@ module.exports = [
       enabled: true,
       origin: [
         'https://nexume-ai-resume-builder.vercel.app',
-        'http://localhost:3000',
+        'http://localhost:5173',
       ],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
       headers: '*',
