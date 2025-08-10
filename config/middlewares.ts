@@ -4,9 +4,12 @@ module.exports = [
     name: 'strapi::cors',
     config: {
       enabled: true,
-      origin: ['https://nexume-ai-resume-builder.vercel.app'], // your frontend URL
-      headers: '*',
+      origin: [
+        'https://nexume-ai-resume-builder.vercel.app',
+        'http://localhost:3000',
+      ],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+      headers: '*',
     },
   },
   'strapi::security',
