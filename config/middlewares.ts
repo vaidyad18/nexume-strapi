@@ -1,18 +1,28 @@
+// ./config/middlewares.js
 module.exports = [
   'strapi::errors',
+  {
+    name: 'strapi::security',
+    config: {
+      contentSecurityPolicy: {
+        useDefaults: true,
+      },
+    },
+  },
   {
     name: 'strapi::cors',
     config: {
       enabled: true,
       origin: [
-        'https://nexume-ai-resume-builder.vercel.app',
         'http://localhost:5173',
+        'http://localhost:5174',
+        'http://localhost:3000',
       ],
-      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-      headers: '*',
+      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
+      headers: ['Content-Type', 'Authorization', 'Accept'],
+      keepHeaderOnError: true,
     },
   },
-  'strapi::security',
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
